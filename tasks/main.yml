@@ -1,7 +1,7 @@
 ---
 # tasks file for nebulon.apt_disable_background_tasks
 - name: Check if APT periodic updates are enabled
-  ansible.builtin.shell: set -o pipefail && grep 1 -m 1 /etc/apt/apt.conf.d/20auto-upgrades | awk -F '"' '{print $2}'
+  ansible.builtin.shell: grep 1 -m 1 /etc/apt/apt.conf.d/20auto-upgrades | awk -F '"' '{print $2}'
   # Since we are just printing something out, don't show as making a change to the system
   changed_when: false
   register: apt_check_cmd
