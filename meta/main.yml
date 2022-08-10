@@ -1,5 +1,7 @@
+---
 galaxy_info:
-  author: Aaron Patten
+  role_name: ansible-role-apt-disable-background-tasks
+  author: jedimt
   description: Disable background APT tasks
 
   license: MIT
@@ -13,7 +15,7 @@ galaxy_info:
         - xenial
         - jammy
 
-  galaxy_tags: 
+  galaxy_tags:
     - apt
 
 dependencies: []
