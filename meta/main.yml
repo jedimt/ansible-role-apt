@@ -1,7 +1,6 @@
----
 galaxy_info:
-  role_name: ansible-role-apt-disable-background-tasks
   author: jedimt
+  role_name: apt_disable_background_tasks
   description: Disable background APT tasks
 
   license: MIT
