@@ -11,6 +11,7 @@
     apt_check: "{{ apt_check_cmd.stdout }}"
 
 - name: Disable APT periodic updates
+  when: apt_check == "1"
   block:
     - name: Set all periodic update options to 0
       ansible.builtin.replace:
@@ -49,4 +50,3 @@
         - apt-daily-upgrade.timer
       loop_control:
         loop_var: service
-  when: apt_check == "1"
