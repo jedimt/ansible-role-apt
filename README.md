@@ -21,15 +21,15 @@ None
 Example Playbook
 ----------------
 
-        # ===========================================================================
-        # Disable APT automatic updates/upgrades
-        # ===========================================================================
-        - name: Disable APT updates and upgrades
-        hosts: servers
-        gather_facts: false
+    # ===========================================================================
+    # Disable APT automatic updates/upgrades
+    # ===========================================================================
+    - name: Disable APT updates and upgrades
+      hosts: servers
+      gather_facts: false
 
-        roles:
-            - ansible-role-apt-disable-background-tasks
+      roles:
+          - ansible-role-apt-disable-background-tasks
 
 License
 -------
