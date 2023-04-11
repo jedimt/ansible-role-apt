@@ -1,6 +1,6 @@
 galaxy_info:
   author: jedimt
-  role_name: apt_disable_background_tasks
+  role_name: apt
   description: Disable background APT tasks
 
   license: MIT

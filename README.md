@@ -1,4 +1,4 @@
-Ansible Role: APT Disable Background Tasks
+Ansible Role: APT
 =========
 
 Disable automated APT background tasks on Ubuntu hosts.
@@ -29,7 +29,7 @@ Example Playbook
       gather_facts: false
 
       roles:
-          - ansible-role-apt-disable-background-tasks
+          - jedimt.apt
 
 License
 -------
